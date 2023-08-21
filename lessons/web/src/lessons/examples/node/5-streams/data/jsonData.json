@@ -1,0 +1,29 @@
+{
+  "name": "John Doe",
+  "age": 30,
+  "email": "john.doe@example.com",
+  "address": {
+    "street": "123 Main Street",
+    "city": "New York",
+    "country": "USA"
+  },
+  "hobbies": [
+    "Reading",
+    "Gardening",
+    "Cooking"
+  ],
+  "isSubscribed": true,
+  "additionalData": [],
+  "isActive": true,
+  "phone": "+1 (123) 456-7890",
+  "interests": [
+    "Sports",
+    "Traveling",
+    "Photography"
+  ],
+  "education": {
+    "degree": "Bachelor of Science",
+    "major": "Computer Science",
+    "university": "Example University"
+  }
+}

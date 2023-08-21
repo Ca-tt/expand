@@ -1,0 +1,15 @@
+.suffer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 500px;
+    border: 1px solid black;
+    align-items: center;
+}
+
+p {
+    width: 200px;
+    height: 200px;
+    margin: 0 10px;
+    background: #000;
+}

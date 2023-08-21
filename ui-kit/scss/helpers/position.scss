@@ -1,0 +1,34 @@
+.relative,
+.is-relative {
+    position: absolute;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.overlay {
+    @extend .absolute;
+}
+
+.at-bottom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.at-top {
+    @extend .absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.pin-right, 
+.pin-to-right {
+    right: 0;
+}

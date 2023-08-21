@@ -1,0 +1,13 @@
+.is-below {
+    z-index: -1;
+}
+
+.hidden-by-opacity,
+.is-hidden {
+    opacity: 0;
+}
+
+.is-visible,
+.is-above-others {
+    z-index: 9999;
+}

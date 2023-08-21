@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+
+/* 
+    backgrounds order:
+    1) Dark forest (foreground, df)
+    2) Green forest (gf)
+    3) Fog (clouds below mountains, f)
+    4) Mountains (m)
+    5) Clouds (c)
+*/
+
+.app {
+    height: 100vh;
+    background-color: hsla(200, 40%, 30%, .4);
+    background-image:
+        url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'),
+        url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+        url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+        url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png'),
+        url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png');
+    background-repeat: repeat-x;
+    background-position: 
+        0 0, /* dark forest */ 
+        0 200px, /* green forest */
+        0 0,  /* fog */
+        0 -100px, /* clouds */
+        0 0; /* mountains */
+    background-size:
+        160%, /* dark forest */
+        110%, /* green forest */
+        100%, /* fog */
+        40%, /* clouds */
+        100%; /* mountains */
+    animation: 50s animate-background infinite linear;
+}
+
+/* more pixels set -> add speed to animation */
+
+@keyframes animate-background {
+    100% {
+        background-position:
+            -5000px 0, /* dark forest */
+            -2000px 200px, /* green forest */
+            -1000px -100px, /* fog */
+            -1500px -100px, /* clouds */
+            -1200px 0; /* mountains */
+    }
+}

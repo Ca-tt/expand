@@ -1,0 +1,63 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "components/*": [
+        "./src/components/*"
+      ],
+      "study/*": [
+        "./src/study/*"
+      ],
+      "node/*": [
+        "./src/study/examples/node/*"
+      ],
+      "@vue/*": [
+        "./src/study/examples/vue/*"
+      ],
+      "js/*": [
+        "./src/study/examples/js/*"
+      ],
+      "scss/*": [
+        "./src/scss/*"
+      ],
+    },
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "skipLibCheck": true,
+    "noEmit": true,
+    "types": [
+      "naive-ui/volar",
+    ],
+  },
+  "include": [
+    "docs/.vitepress/theme/index.ts",
+    "docs/.vitepress/config.ts",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
